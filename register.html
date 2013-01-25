@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<head>
+<title>Simple AJAX Registration Form</title>
+<script src="ajax.js" type="text/javascript" language="javascript"></script>
+<script src="checkusername.js" type="text/javascript" language="javascript"></script>
+<script src="checkuserpass.js" type="text/javascript" language="javascript"></script>
+</head>
+<body>
+	<fieldset>
+		<form action="register.php" method="post">
+			<legend>Registration Form</legend>
+			<p>Username: <input name="uname" type="text" size="20" maxlength="20" onchange="check_username(this.form.uname.value)" /><span id="uname_label"></span></p>
+			<p>Password: <input name="pass1" type="password" /></p>
+			<p>Confirm Password: <input name="pass2" type="password" onchange="check_password(this.form.pass2.value)" /><span id="upass_label"></span></p>
+			<p>First Name: <input name="fname" type="text" size="20" maxlength="20" /></p>
+			<p>Last Name: <input name="lname" type="text" size="20" maxlength="30" /></p>
+			<p>Email: <input name="email" type="text" size="20" maxlength="60" /></p>
+			<input name="submit" type="submit" value="Register" />
+		</form>
+	</fieldset>
+</body>
+</html>
